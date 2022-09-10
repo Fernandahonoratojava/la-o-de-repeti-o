@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+</head>
+<body>
+    <script>
+        var soma = 0;
+        var quantidade =0;
+        
+        
+        var numero1 = parseInt(prompt("Digite o primeiro número"));
+        var numero2 = parseInt(prompt("Digite o segundo número"));
+
+
+    
+        while (numero1 >= numero2) {
+            alert ("O primeiro numero tem que ser menor que o segundo");
+            numero1 = parseint(prompt("Digite o primeiro numero novamente:"));
+        }
+        for ( i= numero1 ; i <= numero2 ; i++) {
+            soma = soma + numero1;
+            quantidade++;
+        }
+        var quantidade = soma/quantidade
+        document.write ("A média dos dois números é "+ quantidade);
+        
+            </script>
+</body>
+</html>

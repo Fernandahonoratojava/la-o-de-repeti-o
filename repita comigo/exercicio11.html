@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var numero =[];
+       var cont =0;
+    
+document.write("Estes são os números que estão entre 24 e 42: " +cont)
+
+        for (i=0; i<10; i++) {
+            numero[i] = parseInt (prompt("Digite o "+ i + "° número:"));
+            if (numero[i] >= 24 && numero[i] <= 42) {
+                document.write (num [i] + "<br>")
+            }
+            else {
+                cont += 1;
+            }
+        }
+        document.write ("<br>"+ "Estes são os números que estão fora do intervalo de 24 e 42: "+cont)
+    </script>
+</body>
+</html>

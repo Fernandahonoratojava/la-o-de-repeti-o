@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero1;
+        var numero2;
+        var media = 0;
+        var quantidade=0;
+        var aprovado= 9.5;
+        var escolha;
+
+        
+        var numero1 = parseInt(prompt("Digite a primeira nota"));
+        var numero2 = parseInt(prompt("Digite segunda nota"));
+        media = parseFloat ((numero1+numero2)/2);
+        document.write ("A média do aluno(a) é: " + media)
+    
+        alert(prompt("Calcular a média de outro aluno S/N?"));
+        while (escolha === "S") {
+            var numero1 = parseInt(prompt("Digite a primeira nota"));
+            var numero2 = parseInt(prompt("Digite segunda nota"));
+            media = parseFloat ((numero1+numero2)/2);
+           
+        }
+
+        if (media>=aprovado){
+            alert ("Aluno aprovado: " + media);
+            quantidade++
+        }
+        else {
+            alert ("Aluno reprovado: "+ media)
+        }
+        alert(prompt("Calcular a média de outro aluno S/N?"));
+        if (escolha === "S") {
+            document.write ("A quantidade de alunos(a) aprovados é : "+quantidade);
+            
+        }        
+            </script>
+</body>
+</html>
